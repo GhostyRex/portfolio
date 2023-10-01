@@ -1,0 +1,502 @@
+/*
+* ==========================================================
+*     FOOTER STARTS
+* ==========================================================
+*/
+footer {
+    border-bottom: 3px double grey;
+}
+
+.upper-footer {
+    background-color: #212121;
+}
+
+.footer-box {
+    background-color: #414141;
+}
+
+.box-header {
+    color: white;
+    font-size: 23px;
+}
+
+.box-text {
+    font-family: Californian FB;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-bottom {
+    background-color: black;
+    font-family: Californian FB;
+    font-size: 15px;
+    color: white;
+}
+
+/*
+* ==========================================================
+*     FOOTER ENDS
+* ==========================================================
+*/
+
+/* Hide the body overflow x */
+.body{
+    overflow-x: hidden;
+}
+
+/*
+* ==========================================================
+*     BODY ENDS
+* ==========================================================
+*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+}
+/*
+* ==========================================================
+*     Back to the top of page button ends
+* ==========================================================
+*/
+
+.top-ripple {
+  background-image: url('../img/port-background.jpg'); background-repeat: no-repeat; border-radius: 0px 0px 100px 100px;
+  overflow: hidden;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.22);
+  }
+
+/*
+* ==========================================================
+*     LANDING PAGE ENDS
+* ==========================================================
+*/
+
+
+.flip-box {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  width: 100%; height: 376px; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18); border-radius: 14px;
+}
+
+.flip-box-text {
+  color: black; font-family: Poor Richard; font-size: 52px; text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 14px;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(-180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: white;
+  color: black;
+  border-radius: 14px;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 14px;
+}
+
+
+.django-skill-icon {
+    height: 130px;
+    width: 130px;
+}
+/*
+* ==========================================================
+*     FLIP BOX ENDS
+* ==========================================================
+*/
+
+.qualifications {
+    background-image: url('../img/curve.jpg');
+    background-repeat: no-repeat;
+    color: white;
+    height: 900px;
+}
+/*
+* ==========================================================
+*     QUALIFICATIONS ENDS
+* ==========================================================
+*/
+
+.code-guild {
+  text-shadow: 6px 3px 6px rgba(62, 94, 223, 0.53);
+  font-family: Cooper;
+  font-size: 50px;
+}
+
+.code-guild:hover {
+  text-shadow: none;
+  background: linear-gradient(to bottom right, #4263CF 0%, #78CF92 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profiles {
+  font-family: Poor Richard;
+  font-size: 50px;
+  padding: 0px 35px 35px 0px;
+  opacity: 70%;
+  color: black;
+}
+
+.experience-years {
+  color: #80AAFF;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.21);
+  font-family: Poor Richard;
+  font-size: 155px;
+}
+
+.experience {
+  font-family: Poor Richard;
+  font-size: 50px;
+}
+
+.description {
+  font-family: 'Palatino Linotype';
+  font-size: 50px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.page-headers {
+  color: #707070;
+  font-family: Cooper;
+  font-size: 116px;
+}
+
+.copyright:hover {
+  color: green;
+}
+
+.i-am-python {
+  font-family: Kristen ITC;
+  font-size: 20px;
+  text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.65);
+}
+
+.zoom {
+-webkit-transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+transition: all 0.35s ease-in-out;
+width:100%;height:340px; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.19);
+}
+
+.zoom:hover,
+.zoom:active,
+.zoom:focus {
+/**adjust scale to desired size,
+add browser prefixes**/
+-ms-transform: scale(1.3);
+-moz-transform: scale(1.3);
+-webkit-transform: scale(1.3);
+-o-transform: scale(1.3);
+transform: scale(1.3);
+position:relative;
+z-index:100;
+}
+
+.work-title-1 {
+  font-family: Poor Richard; font-size: 39px;
+}
+
+/*
+* ==========================================================
+*     projects ENDS
+* ==========================================================
+*/
+
+.skills-image {
+    width:100%; height:558px;
+  }
+
+.skills-zone {
+  border-radius: 71px; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16); width: 100%; height: 236px;
+}
+
+.skills-zone-number {
+  font-family: Poor Richard; font-size: 60px; color: #00A346;
+}
+
+.skills-zone-skills {
+  font-family: Poor Richard; font-size: 30px;
+}
+
+.skills-zone-description {
+  font-family: Poor Richard; font-size: 50px;
+}
+
+/*
+* ==========================================================
+*     SKILLS ENDS
+* ==========================================================
+*/
+
+.page-headers-2 {
+    color: white;
+  }
+
+.get-image {
+    width: 70px;
+    height: 70px;
+}
+
+.get-title {
+    font-family: cooper; font-size: 25px; text-shadow: 0px 3px 6px rgba(247, 0, 255, 0.15);
+}
+
+.get-text {
+    font-family: cooper; font-size: 20px; text-shadow: 0px 3px 6px rgba(247, 0, 255, 0.15);
+}
+
+.get-box {
+    box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.22);
+}
+
+.get-container {
+    background: #134aff; color: white; box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.22); border-radius: 44px;
+}
+/*
+* ==========================================================
+*     WHAT YOU GET ENDS
+* ==========================================================
+*/
+
+@media only screen and (max-width: 1300px) {
+
+  .description {
+    font-size: 30px;
+    /*text-align: center;*/
+  }
+
+  .flip-box-text {
+    font-size: 45px;
+  }
+
+  .page-headers {
+    font-size: 60px;
+  }
+
+  .zoom {
+    height:250px;
+  }
+
+  .skills-image {
+    height: 270px;
+  }
+
+  .skills-zone {
+    height: 150px;
+    border-radius: 40px;
+  }
+
+  .skills-zone-number {
+    font-size: 40px;
+  }
+
+  .skills-zone-description {
+    font-size: 20px;
+  }
+
+  .skills-zone-skills {
+    font-size: 20px;
+  }
+
+  .page-headers-2 {
+    font-size: 40px;
+    color: white;
+  }
+
+  .code-guild {
+    font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+.qualifications {
+    height: 1200px;
+}
+/*.flip-box {
+
+  height: 250px;
+}*/
+
+  .flip-box-text {
+    font-size: 30px;
+  }
+
+  .profiles {
+  font-size: 30px;
+    }
+
+    .experience-years {
+    font-size: 70px;
+  }
+
+  .experience {
+    font-size: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 830px) {
+.qualifications {
+    height: 1500px;
+}
+
+.profiles {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .experience-years {
+    text-align: center;
+  }
+
+  .experience {
+    text-align: center;
+  }
+
+  .description {
+    font-size: 25px;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+.qualifications {
+    height: 1300px;
+}
+  .skill-icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .django-skill-icon {
+    height: 50px;
+    width: 50px;
+    }
+
+    .i-am-python {
+        padding-bottom: 20px;
+    }
+
+  .work-title-1 {
+    font-size: 19px;
+  }
+
+  .profiles {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .profiles-container {
+    padding-top: 30px;
+  }
+
+  .flip-box-text {
+    font-size: 54px;
+  }
+
+  .experience-years {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .experience {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .page-headers {
+    font-size: 60px;
+  }
+
+  .zoom {
+    height:250px;
+  }
+
+  .skills-image {
+    height: 270px;
+  }
+
+  .skills-zone {
+    height: 150px;
+    border-radius: 40px;
+  }
+
+  .skills-zone-number {
+    font-size: 40px;
+  }
+
+  .skills-zone-description {
+    font-size: 20px;
+  }
+
+  .skills-zone-skills {
+    font-size: 20px;
+  }
+
+  .page-headers-2 {
+    font-size: 40px;
+  }
+
+  .page-headers {
+  font-size: 40px;
+  }
+
+  .code-guild {
+    font-size: 20px;
+    }
+
+}

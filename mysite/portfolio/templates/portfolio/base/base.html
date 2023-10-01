@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <!-- Meta data tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- upgrade all request from insecure to secure request -->
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+        <!-- Title of application -->
+        <title>GhostyRex</title>
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+        <!-- MDB -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <!-- Wow starts-->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+        <!-- Script for the scroll button back to top of page -->
+        <script type="text/javascript" src="{% static 'portfolio/js/top.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'portfolio/js/wow.min.js' %}"></script>
+
+        <!-- Initialize wow -->
+        <script type="text/javascript">
+            wow = new WOW({
+                boxClass: 'wow', // default
+                animateClass: 'animated', // default
+                offset: 0, // default
+                mobile: true, // default
+                live: true // default
+            })
+
+            wow.init();
+        </script>
+        <!-- Wow ends-->
+
+        <!-- Link Custom Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+
+    </head>
+
+    <body>
+        {% block content %}
+
+        {% endblock content %}
+        {% include 'portfolio/semantic/footer.html' %}
+    </body>
+</html>

@@ -1,0 +1,786 @@
+{% extends 'portfolio/base/base.html' %}
+{% load static %}
+{% block content %}
+<!-- Ripple animation jquery -->
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.ripples-min.js"></script>
+
+<!--Top of page button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i><span class="sr-only">
+  Top</span>
+</button>
+
+  <div class="container-fluid ripple top-ripple">
+    <div class="container">
+        <div class="row pt-3">
+          <a href="{% url 'index' %}">
+            <div class="col-12 header wow fadeIn">
+              GhostyRex
+            </div>
+          </a>
+        </div>
+      </div>
+
+    <!--  style="background-image: url('../../static/portfolio/img/port-background.png'); opacity: 0.29;" -->
+    <div class="header-data pt-5 mt-5">
+      <div class="row pt-5 pb-lg-5 mb-lg-5 mb-1 pb-1">
+        <div class="col-12 text-center wow fadeInDown" data-wow-delay="0.4s"
+             style="color: white; font-family: Cooper; font-size: 70px; text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.65)">
+          Godlove Yufenyuy
+        </div>
+
+        <div class="col-12 text-center work-title-1 pt-1 wow fadeIn" data-wow-delay="0.4s" style="color: white; font-size: 25px;">
+          Experienced UX/UI Designer, Front and Back-end builder.
+        </div>
+
+        <div class="col-12 text-center pt-3 wow fadeInDown" data-wow-delay="0.4s"
+             style="color: white; font-family: Cooper; font-size: 50px; text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.65)">
+          I Love To Create
+        </div>
+
+        <div class="col-12 text-center mt-5">
+            <a href="https://github.com/GhostyRex/">
+              <img class="mx-1 skill-icon wow fadeInDown" data-wow-delay="0.5s" height="100" width="100"
+                   src="{% static 'portfolio/img/html5_logo.png' %}" alt="project picture">
+            </a>
+
+            <a href="mailto:godloveyufenyuy@gmail.com">
+              <img class="mx-1 skill-icon wow fadeInDown" data-wow-delay="0.6s" height="100" width="100"
+                   src="{% static 'portfolio/img/css3_logon.png' %}" alt="project picture">
+            </a>
+
+            <a href="https://www.linkedin.com/in/godlove-yufenyuy-nkwawir-44968b1a9/">
+              <img class="mx-1 skill-icon wow fadeInDown" data-wow-delay="0.7s" height="100" width="100"
+                   src="{% static 'portfolio/img/javascript_logo.png' %}" alt="project picture">
+            </a>
+
+            <a href="https://www.python.org/">
+              <img class="mx-1 skill-icon wow fadeInDown" data-wow-delay="0.8s" height="100" width="100"
+                   src="{% static 'portfolio/img/python_logon.png' %}" alt="project picture">
+            </a>
+
+            <a href="https://drive.google.com/drive/folders/11bnn3_f-hiskvSeNoogrhW-G8x9gLxXL?usp=drive_link">
+              <img class="mx-1 django-skill-icon wow fadeInDown" data-wow-delay="0.9s"
+                   src="{% static 'portfolio/img/Django-Logo.png' %}" alt="project picture">
+            </a>
+        </div>
+
+        <div id="i-am-python" class="i-am-python col-12 text-center pt-5" style="color: white;">
+          I Am A Python Developer
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="spacer pt-lg-3 mt-lg-3 mt-md-1 pt-md-1"></div>
+
+  <div class="profiles-container container-fluid">
+    <div class="row">
+      <div class="col"></div>
+
+      <div class="col-12 text-center">
+          <a href="https://www.upwork.com/freelancers/~01d8b92159200cc64b?viewMode=1&s=1110580755107926016/">
+            <span class="profiles">UpWork</span>
+          </a>
+
+          <a href="mailto:godloveyufenyuy@gmail.com"><span class="profiles">Google</span></a>
+
+          <a href="https://www.linkedin.com/in/godlove-yufenyuy-nkwawir-44968b1a9/">
+            <span class="profiles">LinkedIn</span>
+          </a>
+
+          <a href="https://github.com/GhostyRex/"><span class="profiles">Github</span></a>
+
+          <a href="https://stackoverflow.com/users/9673933/beginner/"><span class="profiles">StackOverflow</span></a>
+      </div>
+
+      <div class="col"></div>
+    </div>
+  </div>
+
+  <div class="spacer pt-md-3 mt-md-5"></div>
+
+  <div class="container">
+    <div class='row'>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-12">
+            <div class="experience-years">
+              4+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="experience">
+              Years of
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="experience">
+              Working
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="experience">
+              Experience
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-12 mb-5 description">
+            Full Stack Web Application Developer Specialized in Django and Django Rest FrameWorks.
+          </div>
+        </div>
+
+        <div class="row">
+          <div class='col-md-4 col-12 mb-5'>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="spacer pt-5 mt-5"></div>
+                  <div class="spacer pt-5"></div>
+                  <div class="flip-box-text">UX/UI</div>
+                </div>
+
+                <div class="flip-box-back">
+                  <div class="spacer pt-5 mt-5"></div>
+                  <div class="spacer pt-3"></div>
+                  <div class="flip-box-text">Responsive Design</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class='col-md-4 col-12 mb-5'>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="spacer pt-5 mt-5"></div>
+                  <div class="spacer pt-5"></div>
+                  <div class="flip-box-text">BACKEND</div>
+                </div>
+
+                <div class="flip-box-back">
+                  <div class="spacer pt-5 mt-3"></div>
+                  <div class="flip-box-text">Python</div>
+                  <div class="flip-box-text">&</div>
+                  <div class="flip-box-text">Django</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class='col-md-4 col-12 mb-5'>
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="spacer pt-5 mt-5"></div>
+                  <div class="spacer pt-5"></div>
+                  <div class="flip-box-text">API</div>
+                </div>
+
+                <div class="flip-box-back">
+                  <div class="spacer pt-5 mt-5"></div>
+                  <div class="spacer pt-3"></div>
+                  <div class="flip-box-text">Django Rest Framework</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <div class="qualifications container-fluid">
+
+  <h2 class="container text-center page-headers pt-lg-5 pb-5">
+    Qualifications
+  </h2>
+
+   <div class="spacer pt-md-5 mt-5"></div>
+
+  <div class="container">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-5 col-12 pt-5">
+                <h3 class="pt-5 wow fadeInLeft" data-wow-delay="0.4s"
+                    style="font-family: Maiandra GD; font-weight: bold; font-size: 45px;">
+                  Build, Test and Deploy.
+                </h3>
+
+                <!-- Ink Free iphone-devops.jpg -->
+                <div class="wow fadeInLeft" data-wow-delay="0.6s" style="font-family: Goudy Old Style; font-size: 25px;">
+                  Building production ready applications. Using modern technologies and practices such as Docker,
+                  AWS and DevOps to ensure smooth deployment of client solutions on their respective platforms.
+                </div>
+              </div>
+
+              <div class="col-lg col-12 pt-5 wow fadeInRight" data-wow-delay="0.5s">
+                <img style="border-radius: 50px;" class="d-block" width="100%" height="450"
+                     src="{% static 'portfolio/img/iphone_devops.jpg' %}" alt="project picture">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 pt-5">
+                <h3 class="pt-5 wow fadeInLeft" data-wow-delay="0.4s"
+                    style="font-family: Maiandra GD; font-weight: bold; font-size: 45px;">BSc. Mathematics</h3>
+                <h4 class="wow fadeInLeft" data-wow-delay="0.4s">October 2016</h4>
+                <q class="wow fadeInLeft" data-wow-delay="0.4s" style="font-family: Ink Free;">
+                  It is known that, the best programmers are mathematicians!
+                </q>
+
+                <div class="wow fadeInLeft" data-wow-delay="0.6s" style="font-family: Goudy Old Style; font-size: 25px;">
+                  I focus on building applications that reflect your data, plotting graphs, piecharts, bar-charts
+                  and other statistical methods of your choosing.
+                </div>
+
+                <h4 class="pt-4 wow fadeInLeft" data-wow-delay="0.6s"
+                    style="font-family: Goudy Old Style; font-size: 20px;">
+                  Internationally Evaluated by the World Education Services.
+                </h4>
+
+                <a class="btn btn-dark mt-1 wow fadeInLeft" data-wow-delay="0.6s"
+                   href="https://badges.wes.org/Evidence?i=4c4dce76-976f-4b04-900d-e2c463f04dbe&type=ca">
+                  View Evaluation
+                </a>
+              </div>
+
+              <div class="col-lg-1 col-12"></div>
+              <div class="col-lg col-12 pt-5 wow fadeInRight" data-wow-delay="0.5s">
+                <img class="d-block" width="350" height="450"
+                     src="{% static 'portfolio/img/UB Certificate 1_page-0001.jpg' %}" alt="project picture">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="carousel-item">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-12 pt-5">
+                <h3 class="pt-5 wow fadeInLeft" data-wow-delay="0.4s"
+                    style="font-family: Maiandra GD; font-weight: bold; font-size: 45px;">
+                  BSc. Cyber Security
+                </h3>
+
+                <h4 class="wow fadeInLeft" data-wow-delay="0.4s">December 2019</h4>
+
+                <q class="wow fadeInLeft" data-wow-delay="0.4s" style="font-family: Ink Free;">
+                  Ethical Hackers are the safety keeper of the CyberSpace!
+                </q>
+
+                <div class="wow fadeInLeft" data-wow-delay="0.6s" style="font-family: Goudy Old Style; font-size: 25px;">
+                  Building secure applications to ensure and keep clients data safe from prying eyes and malicious actors.
+                </div>
+
+                <h4 class="pt-4 wow fadeInLeft" data-wow-delay="0.6s"
+                    style="font-family: Goudy Old Style; font-size: 20px;">
+                  Internationally Evaluated by the World Education Services.
+                </h4>
+
+                <a class="btn btn-dark mt-1 wow fadeInLeft" data-wow-delay="0.6s"
+                   href="https://badges.wes.org/Evidence?i=4c4dce76-976f-4b04-900d-e2c463f04dbe&type=ca">
+                  View Evaluation
+                </a>
+              </div>
+
+              <div class="col-lg-1 col-12"></div>
+              <div class="col-lg col-12 pt-5 wow fadeInRight" data-wow-delay="0.5s">
+                <img class="d-block" width="350" height="450"
+                     src="{% static 'portfolio/img/Cyber.jpg' %}" alt="project picture">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+    </div>
+
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <h2 class="container text-center page-headers">
+    Projects
+  </h2>
+
+  <h3 class="text-center" style="font-family: Poor Richard; font-size: 30px; font-weight: bold;">Actively Building</h3>
+
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <div class="container-fluid" style="background-image: url('../../static/portfolio/img/world.jpg');">
+  <div class="container">
+    <!-- Tabs navs -->
+    <ul class="nav nav-tabs mb-3 d-flex justify-content-center" id="ex-with-icons" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab"
+          aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i class="fa-solid fa-magnifying-glass me-2"></i>
+          All {% if all %} ({{ all.1 }}) {% else %}(0){% endif %}
+        </a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab"
+          aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i class="fa-solid fa-fire-flame-curved me-2"></i>
+          Hosted {% if hosted %} ({{ hosted.1 }}) {% else %}(0){% endif %}
+        </a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+          aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i class="fa-solid fa-hourglass me-2"></i>
+          Awaiting Hosting {% if not_hosted %} ({{ not_hosted.1 }}) {% else %}(0){% endif %}
+        </a>
+      </li>
+    </ul>
+    <!-- Tabs navs -->
+
+<!-- Tabs content -->
+<div class="tab-content mt-5 pt-3" id="ex-with-icons-content">
+
+  <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel" aria-labelledby="ex-with-icons-tab-1">
+    <div class="row">
+      <div class="col-md-5 col-12 mb-5">
+        {% if all.0.0 %}
+          <a href="{{ all.0.0.link }}">
+            <img class="zoom" src="/media/{{ all.0.0.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-md-5 col-12 mb-5">
+        {% if all.0.1 %}
+          <a href="{{ all.0.1.link }}">
+            <img class="zoom" src="/media/{{ all.0.1.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+
+    <div class="spacer pt-md-5 mt-md-5"></div>
+
+    <div class="row">
+      <div class="col-md-5 col-12 mb-5">
+        {% if all.0.2 %}
+          <a href="{{ all.0.2.link }}">
+            <img class="zoom" src="/media/{{ all.0.2.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-md-5 col-12 mb-5">
+        {% if all.0.3 %}
+          <a href="{{ all.0.3.link }}">
+            <img class="zoom" src="/media/{{ all.0.3.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+
+    <div class="spacer pt-md-5 mt-md-5"></div>
+
+  </div>
+
+
+  <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
+    <div class="row">
+      <div class="col-md-5 col-12 mb-5">
+        {% if hosted.0.0 %}
+          <a href="{{ hosted.0.0.link }}">
+            <img class="zoom" src="/media/{{ hosted.0.0.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-md-5 col-12 mb-5">
+        {% if hosted.0.1 %}
+          <a href="{{ hosted.0.1.link }}">
+            <img class="zoom" src="/media/{{ hosted.0.1.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+
+    <div class="spacer pt-md-5 mt-md-5"></div>
+
+    <div class="row">
+      <div class="col-md-5 col-12 mb-5">
+        {% if hosted.0.2 %}
+          <a href="{{ hosted.0.2.link }}">
+            <img class="zoom" src="/media/{{ hosted.0.2.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-md-5 col-12 mb-5">
+        {% if hosted.0.3 %}
+          <a href="{{ hosted.0.3.link }}">
+            <img class="zoom" src="/media/{{ hosted.0.3.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
+      <div class="row">
+      <div class="col-md-5 col-12 mb-5">
+        {% if not_hosted.0.0 %}
+          <a href="{{ not_hosted.0.0.link }}">
+            <img class="zoom" src="/media/{{ not_hosted.0.0.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-md-5 col-12 mb-5">
+        {% if not_hosted.0.1 %}
+          <a href="{{ not_hosted.0.1.link }}">
+            <img class="zoom" src="/media/{{ not_hosted.0.1.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+
+    <div class="spacer pt-md-5 mt-md-5"></div>
+
+    <div class="row">
+      <div class="col-md-5 col-12 mb-5">
+        {% if not_hosted.0.2 %}
+          <a href="{{ not_hosted.0.2.link }}">
+            <img class="zoom" src="/media/{{ not_hosted.0.2.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-md-5 col-12 mb-5">
+        {% if not_hosted.0.3 %}
+          <a href="{{ not_hosted.0.3.link }}">
+            <img class="zoom" src="/media/{{ not_hosted.0.3.image }}" alt="project picture">
+          </a>
+        {% endif %}
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Tabs content -->
+  </div>
+
+  </div>
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-12"></div>
+
+      <div class="col-md col-12 text-center">
+        <a class="btn btn-info btn-lg text-center"
+           href="https://drive.google.com/drive/folders/11bnn3_f-hiskvSeNoogrhW-G8x9gLxXL?usp=drive_link"
+           style="font-weight: bold;">
+          View More
+        </a>
+      </div>
+
+      <div class="col-md-4 col-12"></div>
+
+    </div>
+  </div>
+
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <h2 class="container text-center page-headers">
+    Skills
+  </h2>
+
+  <div class="spacer pt-md-5 mt-md-5"></div>
+
+  <div class="container skills">
+    <div class="row">
+      <div class="col-lg-5 col-12 pt-lg-5 pb-5">
+        <div class="spacer pt-lg-5 mt-lg-5"></div>
+        <div class="spacer pt-lg-5 mt-lg-5"></div>
+
+        <a href="https://www.freepik.com/free-vector/boss-employee-workplace-holding-board-male-office-workers-dressed-
+        smart-clothes_13500148.htm#query=climbing%20a%20ladder%20vect&position=17&from_view=search&track=ais">
+          <img style="border-radius: 30px;" height="100%" class="skills-image"
+               src="{% static 'portfolio/img/ladder-2.jpg' %}" alt="project picture">
+        </a>
+      </div>
+
+      <div class="col"></div>
+
+      <div class="col-lg-6 col-12 mt-5">
+        <div class="row">
+          <div class="col-12 skills-zone">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-2 col-3 pt-5 mt-md-3 skills-zone-number">
+                01
+              </div>
+
+              <div class="col-9 pt-4">
+                <div class="row">
+                  <div class="col-12 skills-zone-description">
+                    BackEnd Development
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 skills-zone-skills">
+                    Django, Django Rest
+                  </div>
+                </div>
+
+                <div class="row pt-md-3">
+                  <div class="col-12">
+                    <div class="progress" style="height: 6px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                           aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer pt-md-5 mt-5"></div>
+
+        <div class="row">
+          <div class="col-12 skills-zone">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-2 col-3 pt-5 mt-md-3 skills-zone-number">
+                02
+              </div>
+
+              <div class="col-9 pt-4">
+                <div class="row">
+                  <div class="col-12 skills-zone-description">
+                    FrontEnd Development
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 skills-zone-skills">
+                    JavaScript, Bootstrap, Html, Css, JQuery.
+                  </div>
+                </div>
+
+                <div class="row pt-md-3">
+                  <div class="col-12">
+                    <div class="progress" style="height: 6px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                           aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacer pt-md-5 mt-5"></div>
+
+        <div class="row">
+          <div class="col-12 skills-zone">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-2 col-3 pt-5 mt-md-3 skills-zone-number">
+                03
+              </div>
+
+              <div class="col-9 pt-4">
+                <div class="row">
+                  <div class="col-12 skills-zone-description">
+                    Database
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 skills-zone-skills">
+                    MySQL Db, PostgreSQL Db
+                  </div>
+                </div>
+
+                <div class="row pt-md-3">
+                  <div class="col-12">
+                    <div class="progress" style="height: 6px;">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                           aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col"></div>
+
+          <div class="col-md col-6 text-center mt-md-5 mt-3">
+            <a class="btn btn-success btn-lg text-center"
+               href="https://drive.google.com/drive/folders/11bnn3_f-hiskvSeNoogrhW-G8x9gLxXL?usp=drive_link"
+               style="width: 100%; font-weight: bold;">Resume</a>
+          </div>
+
+          <div class="col-md-4 col"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="spacer pt-md-5 mt-md-5"></div>
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <div class="get-container container pt-md-5 pb-5">
+    <h2 class="container text-center page-headers page-headers-2">
+      What You Get!
+    </h2>
+
+    <div class="row mt-5 mb-3">
+      <div class="col-lg-3 col-12 mt-3 mx-lg-5 mx-1 ripple get-box">
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <img class="get-image" src="{% static 'portfolio/img/real-time.jpg' %}" alt="project picture">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="get-title col-12 text-center">
+            On-Time Delivery
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="get-text col-12 text-center">
+            Project deliverables/milestones are always achieved on time. Working hard to meet customers satisfaction.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-12 mt-3 mx-lg-5 mx-1 ripple get-box">
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <img class="get-image" src="{% static 'portfolio/img/experience.jpg' %}" alt="project picture">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="get-title col-12 text-center">
+            Experience
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="get-text col-12 text-center">
+            Improve customer experience with best prices and on-time delivery. You get beautiful responsive
+            UX/UI designs for all applications with improved efficiency in functioning.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-12 mt-3 mx-lg-5 mx-1 ripple get-box">
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <img class="get-image" src="{% static 'portfolio/img/save-money.jpg' %}" alt="project picture">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="get-title col-12 text-center">
+            Best Prices
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="get-text col-12 text-center">
+            Provide best prices that meet with customers needs and available budget. Customer gets expert skills at
+            a low budget.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center code-guild">
+        &lt;BUILD&gt; EAT, CODE, SLEEP, REPEAT &lt;&#47;BUILD&gt;
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer pt-md-5 mt-md-5"></div>
+  <div class="spacer pt-md-5 mt-5"></div>
+
+  <!-- Link Custom Index JavaScript -->
+  <script type="text/javascript" src="{% static 'portfolio/js/index.js' %}"></script>
+
+  <!-- Link Custom Index JavaScript -->
+  <script type="text/javascript" src="{% static 'portfolio/js/water-effect.js' %}"></script>
+
+
+{% endblock %}
