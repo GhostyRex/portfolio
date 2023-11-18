@@ -1,0 +1,72 @@
+.projects-list {
+    list-style: none;
+}
+
+.projects-list-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.projects-list-item a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.projects-list-item a:hover {
+    opacity: 50%;
+}
+
+/* Start Moving Brackets styling */
+a.movingBrackets::before {
+/*   content: "[ "; */
+  margin: -0.1em 0px 0px -0.5em;
+  visibility: hidden;
+}
+
+a.movingBrackets::after {
+/*   content: " ]"; */
+  margin: -0.1em 0px 0px 0.1em;
+  visibility: hidden;
+}
+
+a.movingBrackets::before, a.movingBrackets::after {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: absolute;
+}
+
+a.movingBrackets:hover::before  {
+    margin: -0.1em 0px 0px -1em;
+  color: #f5f5f5;
+  visibility: visible;
+}
+
+a.movingBrackets:hover::after  {
+  margin: -0.1em 0px 0px 0.5em;
+  color: #f5f5f5;
+  visibility: visible;
+}
+
+/* Custom Brackets */
+a.movingBrackets.square-brackets::before {
+  content: "[";
+}
+a.movingBrackets.square-brackets::after {
+  content: "]";
+}
+
+/* End Moving Brackets styling */
+
+.projects-title {
+    font-family: "Cooper", sans-serif;
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+    .projects-title {
+        font-size: 40px;
+    }
+}

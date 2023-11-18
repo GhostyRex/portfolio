@@ -1,3 +1,55 @@
+/* FontFace */
+@font-face {
+    font-family: "Cooper";
+    src: url("./public/fonts/Cooper-ExtraBold.woff2")
+    format("woff2");
+}
+
+@font-face {
+    font-family: "Kristen ITC";
+    src: url("./public/fonts/Kristen ITC.woff2")
+    format("woff2");
+}
+
+@font-face {
+    font-family: "Goudy";
+    src: url("./public/fonts/OPTIwtcGoudy-Medium.ttf.woff")
+    format("woff");
+}
+
+@font-face {
+    font-family: "Maiandra GD";
+    src: url("./public/fonts/Maiandra GD.woff2")
+    format("woff2");
+}
+
+/* OPTIDeligne-Bold.ttf.woff */
+@font-face {
+    font-family: "OPT";
+    src: url("./public/fonts/OPTIDeligne-Normal.ttf.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poor Richard";
+    src: url("./public/fonts/Poor Richard.woff2")
+    format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Palatino Linotype";
+    src: url("./public/fonts/Palatino Linotype W02 Bold.woff2")
+    format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* End FontFace */
+
 /*
 * ==========================================================
 *     FOOTER STARTS
@@ -21,14 +73,14 @@ footer {
 }
 
 .box-text {
-    font-family: Californian FB;
+    font-family: "OPT", sans-serif;
     font-size: 18px;
     color: white;
 }
 
 .footer-bottom {
     background-color: black;
-    font-family: Californian FB;
+    font-family: "OPT", sans-serif;
     font-size: 15px;
     color: white;
 }
@@ -40,7 +92,7 @@ footer {
 */
 
 /* Hide the body overflow x */
-.body{
+html, body {
     overflow-x: hidden;
 }
 
@@ -91,7 +143,10 @@ footer {
 }
 
 .flip-box-text {
-  color: black; font-family: Poor Richard; font-size: 52px; text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+  color: black;
+  font-family: "Poor Richard", sans-serif;
+  font-size: 52px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* This container is needed to position the front and back side */
@@ -160,7 +215,7 @@ footer {
 
 .code-guild {
   text-shadow: 6px 3px 6px rgba(62, 94, 223, 0.53);
-  font-family: Cooper;
+  font-family: "Cooper", sans-serif;
   font-size: 50px;
 }
 
@@ -172,7 +227,7 @@ footer {
 }
 
 .profiles {
-  font-family: Poor Richard;
+  font-family: "Poor Richard", sans-serif;
   font-size: 50px;
   padding: 0px 35px 35px 0px;
   opacity: 70%;
@@ -182,24 +237,24 @@ footer {
 .experience-years {
   color: #80AAFF;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.21);
-  font-family: Poor Richard;
+  font-family: "Poor Richard", sans-serif;
   font-size: 155px;
 }
 
 .experience {
-  font-family: Poor Richard;
+  font-family: "Poor Richard", sans-serif;
   font-size: 50px;
 }
 
 .description {
-  font-family: 'Palatino Linotype';
+  font-family: "Palatino Linotype", sans-serif;
   font-size: 50px;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .page-headers {
   color: #707070;
-  font-family: Cooper;
+  font-family: "Cooper", sans-serif;
   font-size: 116px;
 }
 
@@ -207,8 +262,19 @@ footer {
   color: green;
 }
 
+.header {
+font-family: "Poor Richard", sans-serif; font-size: 52px; opacity: 86%;
+  background: linear-gradient(to bottom right, #FFFFFF 0%, #78CF92 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.header:hover {
+  opacity: 30%;
+}
+
 .i-am-python {
-  font-family: Kristen ITC;
+  font-family: "Kristen ITC", sans-serif;
   font-size: 20px;
   text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.65);
 }
@@ -235,7 +301,7 @@ z-index:100;
 }
 
 .work-title-1 {
-  font-family: Poor Richard; font-size: 39px;
+  font-family: "Poor Richard", sans-serif; font-size: 39px;
 }
 
 /*
@@ -253,15 +319,15 @@ z-index:100;
 }
 
 .skills-zone-number {
-  font-family: Poor Richard; font-size: 60px; color: #00A346;
+  font-family: "Poor Richard", sans-serif; font-size: 60px; color: #00A346;
 }
 
 .skills-zone-skills {
-  font-family: Poor Richard; font-size: 30px;
+  font-family: "Poor Richard", sans-serif; font-size: 30px;
 }
 
 .skills-zone-description {
-  font-family: Poor Richard; font-size: 50px;
+  font-family: "Poor Richard", sans-serif; font-size: 50px;
 }
 
 /*
@@ -280,11 +346,11 @@ z-index:100;
 }
 
 .get-title {
-    font-family: cooper; font-size: 25px; text-shadow: 0px 3px 6px rgba(247, 0, 255, 0.15);
+    font-family: "Cooper", sans-serif; font-size: 25px; text-shadow: 0px 3px 6px rgba(247, 0, 255, 0.15);
 }
 
 .get-text {
-    font-family: cooper; font-size: 20px; text-shadow: 0px 3px 6px rgba(247, 0, 255, 0.15);
+    font-family: "Cooper", sans-serif; font-size: 20px; text-shadow: 0px 3px 6px rgba(247, 0, 255, 0.15);
 }
 
 .get-box {
@@ -299,6 +365,31 @@ z-index:100;
 *     WHAT YOU GET ENDS
 * ==========================================================
 */
+
+
+.qualifications-header {
+    font-family: "Maiandra GD", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.qualifications-text, .evaluation {
+    font-family: "OPT", sans-serif;
+    font-size: 25px;
+}
+
+.evaluation {
+    font-size: 20px;
+}
+
+.qualification-image {
+    width: 350px;
+    height: 450px;
+}
+
+.qualification-image-special {
+    width: 100%;
+}
 
 @media only screen and (max-width: 1300px) {
 
@@ -353,7 +444,7 @@ z-index:100;
 
 @media only screen and (max-width: 1100px) {
 .qualifications {
-    height: 1200px;
+    height: 1250px;
 }
 /*.flip-box {
 
@@ -408,7 +499,7 @@ z-index:100;
 @media only screen and (max-width: 500px) {
 
 .qualifications {
-    height: 1300px;
+    height: 1350px;
 }
   .skill-icon {
     height: 35px;
@@ -498,5 +589,10 @@ z-index:100;
   .code-guild {
     font-size: 20px;
     }
+
+   .qualification-image {
+        width: 100%;
+        height: 400px;
+   }
 
 }

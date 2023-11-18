@@ -22,7 +22,7 @@
 
     <!--  style="background-image: url('../../static/portfolio/img/port-background.png'); opacity: 0.29;" -->
     <div class="header-data pt-5 mt-5">
-      <div class="row pt-5 pb-lg-5 mb-lg-5 mb-1 pb-1">
+      <div class="row pt-lg-5 pb-lg-5 mb-lg-5 mb-1 pb-1">
         <div class="col-12 text-center wow fadeInDown" data-wow-delay="0.4s"
              style="color: white; font-family: Cooper; font-size: 70px; text-shadow: 0px 3px 6px rgba(255, 255, 255, 0.65)">
           Godlove Yufenyuy
@@ -229,20 +229,19 @@
           <div class="carousel-item active">
             <div class="row">
               <div class="col-lg-5 col-12 pt-5">
-                <h3 class="pt-5 wow fadeInLeft" data-wow-delay="0.4s"
-                    style="font-family: Maiandra GD; font-weight: bold; font-size: 45px;">
+                <h3 class="pt-5 wow fadeInLeft qualifications-header" data-wow-delay="0.4s">
                   Build, Test and Deploy.
                 </h3>
 
                 <!-- Ink Free iphone-devops.jpg -->
-                <div class="wow fadeInLeft" data-wow-delay="0.6s" style="font-family: Goudy Old Style; font-size: 25px;">
+                <div class="wow fadeInLeft qualifications-text" data-wow-delay="0.6s">
                   Building production ready applications. Using modern technologies and practices such as Docker,
                   AWS and DevOps to ensure smooth deployment of client solutions on their respective platforms.
                 </div>
               </div>
 
               <div class="col-lg col-12 pt-5 wow fadeInRight" data-wow-delay="0.5s">
-                <img style="border-radius: 50px;" class="d-block" width="100%" height="450"
+                <img style="border-radius: 50px;" class="d-block qualification-image qualification-image-special"
                      src="{% static 'portfolio/img/iphone_devops.jpg' %}" alt="project picture">
               </div>
             </div>
@@ -252,20 +251,18 @@
           <div class="carousel-item">
             <div class="row d-flex justify-content-center">
               <div class="col-lg-5 col-12 pt-5">
-                <h3 class="pt-5 wow fadeInLeft" data-wow-delay="0.4s"
-                    style="font-family: Maiandra GD; font-weight: bold; font-size: 45px;">BSc. Mathematics</h3>
+                <h3 class="pt-5 wow fadeInLeft qualifications-header" data-wow-delay="0.4s">BSc. Mathematics</h3>
                 <h4 class="wow fadeInLeft" data-wow-delay="0.4s">October 2016</h4>
                 <q class="wow fadeInLeft" data-wow-delay="0.4s" style="font-family: Ink Free;">
                   It is known that, the best programmers are mathematicians!
                 </q>
 
-                <div class="wow fadeInLeft" data-wow-delay="0.6s" style="font-family: Goudy Old Style; font-size: 25px;">
+                <div class="wow fadeInLeft qualifications-text" data-wow-delay="0.6s">
                   I focus on building applications that reflect your data, plotting graphs, piecharts, bar-charts
                   and other statistical methods of your choosing.
                 </div>
 
-                <h4 class="pt-4 wow fadeInLeft" data-wow-delay="0.6s"
-                    style="font-family: Goudy Old Style; font-size: 20px;">
+                <h4 class="pt-4 wow fadeInLeft evaluation" data-wow-delay="0.6s">
                   Internationally Evaluated by the World Education Services.
                 </h4>
 
@@ -277,7 +274,7 @@
 
               <div class="col-lg-1 col-12"></div>
               <div class="col-lg col-12 pt-5 wow fadeInRight" data-wow-delay="0.5s">
-                <img class="d-block" width="350" height="450"
+                <img class="d-block qualification-image"
                      src="{% static 'portfolio/img/UB Certificate 1_page-0001.jpg' %}" alt="project picture">
               </div>
             </div>
@@ -287,8 +284,7 @@
           <div class="carousel-item">
             <div class="row d-flex justify-content-center">
               <div class="col-lg-5 col-12 pt-5">
-                <h3 class="pt-5 wow fadeInLeft" data-wow-delay="0.4s"
-                    style="font-family: Maiandra GD; font-weight: bold; font-size: 45px;">
+                <h3 class="pt-5 wow fadeInLeft qualifications-header" data-wow-delay="0.4s">
                   BSc. Cyber Security
                 </h3>
 
@@ -298,12 +294,12 @@
                   Ethical Hackers are the safety keeper of the CyberSpace!
                 </q>
 
-                <div class="wow fadeInLeft" data-wow-delay="0.6s" style="font-family: Goudy Old Style; font-size: 25px;">
-                  Building secure applications to ensure and keep clients data safe from prying eyes and malicious actors.
+                <div class="wow fadeInLeft qualifications-text" data-wow-delay="0.6s">
+                  Building secure applications to ensure and keep clients data safe from prying eyes and malicious
+                  actors.
                 </div>
 
-                <h4 class="pt-4 wow fadeInLeft" data-wow-delay="0.6s"
-                    style="font-family: Goudy Old Style; font-size: 20px;">
+                <h4 class="pt-4 wow fadeInLeft evaluation" data-wow-delay="0.6s">
                   Internationally Evaluated by the World Education Services.
                 </h4>
 
@@ -315,7 +311,7 @@
 
               <div class="col-lg-1 col-12"></div>
               <div class="col-lg col-12 pt-5 wow fadeInRight" data-wow-delay="0.5s">
-                <img class="d-block" width="350" height="450"
+                <img class="d-block qualification-image"
                      src="{% static 'portfolio/img/Cyber.jpg' %}" alt="project picture">
               </div>
             </div>
@@ -521,8 +517,9 @@
       <div class="col-md-4 col-12"></div>
 
       <div class="col-md col-12 text-center">
+        <!-- href="https://drive.google.com/drive/folders/11bnn3_f-hiskvSeNoogrhW-G8x9gLxXL?usp=drive_link"-->
         <a class="btn btn-info btn-lg text-center"
-           href="https://drive.google.com/drive/folders/11bnn3_f-hiskvSeNoogrhW-G8x9gLxXL?usp=drive_link"
+           href="{% url 'projects' %}"
            style="font-weight: bold;">
           View More
         </a>
@@ -688,7 +685,7 @@
   <div class="spacer pt-md-5 mt-md-5"></div>
   <div class="spacer pt-md-5 mt-5"></div>
 
-  <div class="get-container container pt-md-5 pb-5">
+  <div class="get-container container pt-md-5 pb-5 pt-4">
     <h2 class="container text-center page-headers page-headers-2">
       What You Get!
     </h2>
